@@ -15,11 +15,13 @@ async function sync() {
     }
   });
 
+  console.log(`Found ${response.results.length} published pages`);
+
   for (const page of response.results) {
     const title = page.properties.Title.title[0]?.plain_text || 'Untitled';
     const date = page.properties.Date?.date?.start || new Date().toISOString().split('T')[0];
     const tags = page.properties.Tags?.multi_select?.map(t => t.name) || [];
-    const slug = page.properties.Slug?.rich_text[0]?.plain_text || 
+    const slug = page.properties.Slug?.rich_text[0]?.plain_text ||
                  title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
     const mdBlocks = await n2m.pageToMarkdown(page.id);
