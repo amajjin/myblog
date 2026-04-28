@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>뉴펀들랜드 on Blowfish</title>
-    <link>//localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/</link>
+    <link>http://localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/</link>
     <description>Recent content in 뉴펀들랜드 on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>눈오는 날</title>
-      <link>//localhost:1313/posts/snowday/</link>
+      <link>http://localhost:1313/posts/snowday/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/posts/snowday/</guid>
+      <guid>http://localhost:1313/posts/snowday/</guid>
       <description></description>
       
     </item>

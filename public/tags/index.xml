@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blowfish</title>
-    <link>//localhost:1313/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Blowfish</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2026 </copyright>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>뉴펀들랜드</title>
-      <link>//localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/</link>
+      <link>http://localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/</guid>
+      <guid>http://localhost:1313/tags/%EB%89%B4%ED%8E%80%EB%93%A4%EB%9E%9C%EB%93%9C/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>일상</title>
-      <link>//localhost:1313/tags/%EC%9D%BC%EC%83%81/</link>
+      <link>http://localhost:1313/tags/%EC%9D%BC%EC%83%81/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/%EC%9D%BC%EC%83%81/</guid>
+      <guid>http://localhost:1313/tags/%EC%9D%BC%EC%83%81/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>캐나다</title>
-      <link>//localhost:1313/tags/%EC%BA%90%EB%82%98%EB%8B%A4/</link>
+      <link>http://localhost:1313/tags/%EC%BA%90%EB%82%98%EB%8B%A4/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/tags/%EC%BA%90%EB%82%98%EB%8B%A4/</guid>
+      <guid>http://localhost:1313/tags/%EC%BA%90%EB%82%98%EB%8B%A4/</guid>
       <description></description>
       
     </item>
