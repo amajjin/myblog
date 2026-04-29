@@ -28,7 +28,7 @@ jobs:
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: node sync.js
 
-    - name: Commit and Push
+      - name: Commit and Push
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
