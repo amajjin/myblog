@@ -1,4 +1,4 @@
-﻿const { Client } = require('@notionhq/client');
+const { Client } = require('@notionhq/client');
 const { NotionToMarkdown } = require('notion-to-md');
 const fs = require('fs');
 const path = require('path');
@@ -24,6 +24,7 @@ async function sync() {
     const tags = props.Tags?.multi_select?.map(t => t.name) || [];
     const slug = props.Slug?.rich_text[0]?.plain_text ||
                  title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+    const language = props.Language?.select?.name || 'ko';
 
     const mdBlocks = await n2m.pageToMarkdown(page.id);
     const mdContent = n2m.toMarkdownString(mdBlocks);
@@ -31,9 +32,10 @@ async function sync() {
     const tagStr = tags.map(t => '"' + t + '"').join(', ');
     const frontMatter = '---\ntitle: "' + title + '"\ndate: ' + date + '\ndraft: false\ntags: [' + tagStr + ']\n---\n';
 
-    const filePath = path.join('content', 'posts', slug + '.md');
+    const fileName = language === 'ko' ? slug + '.md' : slug + '.' + language + '.md';
+    const filePath = path.join('content', 'posts', fileName);
     fs.writeFileSync(filePath, frontMatter + mdContent.parent);
-    console.log('Synced: ' + slug + '.md');
+    console.log('Synced: ' + fileName);
   }
 }
 
