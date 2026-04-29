@@ -4,7 +4,7 @@
 
 theme = "blowfish"
 baseURL = "https://myblog-eu1.pages.dev/"
-defaultContentLanguage = "en"
+defaultContentLanguage = "ko"
 
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 

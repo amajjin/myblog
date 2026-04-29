@@ -1,0 +1,17 @@
+disabled = false
+locale = "ko-KR"
+label = "한국어"
+weight = 1
+title = "돌섬과 인간"
+
+[params]
+  displayName = "KO"
+  isoCode = "ko"
+  rtl = false
+  dateFormat = "2006년 1월 2일"
+  description = "뉴펀들랜드에서 쓴 편지. 그리고 인간이라는 섬에서 쓴 기록"
+
+[params.author]
+  name = "Jin"
+  headline = "Rock and Flesh — 뉴펀들랜드 사가"
+  bio = "뉴펀들랜드에서 쓴 글"

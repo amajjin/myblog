@@ -1,4 +1,4 @@
-const { Client } = require('@notionhq/client');
+﻿const { Client } = require('@notionhq/client');
 const { NotionToMarkdown } = require('notion-to-md');
 const fs = require('fs');
 const path = require('path');
@@ -15,29 +15,25 @@ async function sync() {
     }
   });
 
-  console.log(`Found ${response.results.length} published pages`);
+  console.log('Found ' + response.results.length + ' published pages');
 
   for (const page of response.results) {
-    const title = page.properties.Title.title[0]?.plain_text || 'Untitled';
-    const date = page.properties.Date?.date?.start || new Date().toISOString().split('T')[0];
-    const tags = page.properties.Tags?.multi_select?.map(t => t.name) || [];
-    const slug = page.properties.Slug?.rich_text[0]?.plain_text ||
+    const props = page.properties;
+    const title = props.Title.title[0]?.plain_text || 'Untitled';
+    const date = props.Date?.date?.start || new Date().toISOString().split('T')[0];
+    const tags = props.Tags?.multi_select?.map(t => t.name) || [];
+    const slug = props.Slug?.rich_text[0]?.plain_text ||
                  title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
 
     const mdBlocks = await n2m.pageToMarkdown(page.id);
     const mdContent = n2m.toMarkdownString(mdBlocks);
 
-    const frontMatter = `---
-title: "${title}"
-date: ${date}
-draft: false
-tags: [${tags.map(t => `"${t}"`).join(', ')}]
----
-`;
+    const tagStr = tags.map(t => '"' + t + '"').join(', ');
+    const frontMatter = '---\ntitle: "' + title + '"\ndate: ' + date + '\ndraft: false\ntags: [' + tagStr + ']\n---\n';
 
-    const filePath = path.join('content', 'posts', `${slug}.md`);
+    const filePath = path.join('content', 'posts', slug + '.md');
     fs.writeFileSync(filePath, frontMatter + mdContent.parent);
-    console.log(`Synced: ${slug}.md`);
+    console.log('Synced: ' + slug + '.md');
   }
 }
 
