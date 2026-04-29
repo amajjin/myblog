@@ -23,7 +23,7 @@ async function sync() {
     const date = props.Date?.date?.start || new Date().toISOString().split('T')[0];
     const tags = props.Tags?.multi_select?.map(t => t.name) || [];
     const slug = props.Slug?.rich_text[0]?.plain_text ||
-                 title.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                 title.replace(/\s+/g, '-').replace(/[^\p{L}\p{N}-]/gu, '').toLowerCase();
     const language = props.Language?.select?.name || 'ko';
 
     const mdBlocks = await n2m.pageToMarkdown(page.id);
