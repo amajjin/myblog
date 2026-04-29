@@ -1,22 +1,21 @@
 disabled = false
 locale = "en"
 label = "English"
-weight = 1
-title = "Blowfish"
+weight = 2
+title = "Rock and Flesh"
 
 [params]
   displayName = "EN"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/logo.png"
-  # secondaryLogo = "img/secondary-logo.png"
-  # description = "My awesome website"
+  description = "Letters from Newfoundland, and from the island of the body"
   # copyright = "Copy, _right?_ :thinking_face:"
 
-# [params.author]
-#   name = "Your name here"
-#   email = "youremail@example.com"
+[params.author]
+  name = "JJ in Newfoundland"
+  headline = "A Newfoundland Saga"
+  bio = "Writing from Newfoundland"
 #   image = "img/blowfish_logo.png"
 #   imageQuality = 96
 #   headline = "I'm only human"
