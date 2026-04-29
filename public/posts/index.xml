@@ -19,5 +19,25 @@
       
     </item>
     
+    <item>
+      <title>친구가 없는 뉴피들</title>
+      <link>http://localhost:1313/posts/--/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/--/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>테스트</title>
+      <link>http://localhost:1313/posts/text/</link>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/text/</guid>
+      <description></description>
+      
+    </item>
+    
   </channel>
 </rss>
