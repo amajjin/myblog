@@ -53,17 +53,14 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showScrollToTop = true
 
 [homepage]
-  layout = "card" # valid options: page, profile, hero, card, background, custom
-  #homepageImage = "IMAGE.jpg" # used in: hero, and card
+  layout = "list"
   showRecent = true
-  showRecentItems = 5
-  showMoreLink = false
+  showRecentItems = 12
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
-  cardView = false
+  cardView = true
   cardViewScreenWidth = false
-  layoutBackgroundBlur = false # only used when layout equals background
-  disableHeroImageFilter = false # only used when layout equals hero
-
+  
 [article]
   showDate = true
   showViews = false
