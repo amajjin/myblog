@@ -2,7 +2,7 @@ disabled = false
 locale = "ko-KR"
 label = "한국어"
 weight = 1
-title = "돌섬과 인간"
+title = "두개의섬"
 
 [params]
   displayName = "KO"
